@@ -154,6 +154,20 @@ p {
   border-color: #cae4e8;
 }
 
+.btn-rounded {
+  background: #dbe4e0;
+  color: #565656;
+  border-width: 2px;
+  border-radius: 50px;
+  line-height: 30px;
+  text-align: center;
+}
+.btn-rounded:hover {
+  background: transparent;
+  color: #00c973 !important;
+  border: 2px #00c973 solid;
+}
+
 .btn:hover, .btn:focus {
   color: #fff;
 }
@@ -414,7 +428,8 @@ font-size: 50px;
 #services {
   padding-bottom: 50px;
   padding-top: 30px;
-  background: url(../images/svc-bg.svg) no-repeat center center / 110%;
+  background: url(../images/svc-bg.svg) repeat top center / 110%;
+
 }
 #services .p-heading {
   background-position: center bottom;
@@ -508,10 +523,12 @@ font-size: 50px;
 #portfolio {
   position: relative;
   /*padding-bottom: 50px;*/
-  padding-top: 90px;
-}
+  padding-top: 70px;
+/*  background: url(../images/svcbg.svg) no-repeat -26% 160% / 35%;
+*/}
 #portfolio .p-heading{
   background-position: center bottom;
+  margin-bottom: 20px;
 }
 #portfolio .p-heading span {
   box-shadow: inset 0 -22px 0 rgba(118, 45, 249, 0.7);
@@ -555,7 +572,7 @@ font-size: 50px;
 
 #portfolio .portfolio-container {
   display: inline-block;
-  margin-bottom: 50px;
+  /*margin-bottom: 50px;*/
   width: 100%;
 }
 
@@ -576,9 +593,9 @@ font-size: 50px;
 #journal,  #journal-blog {
   height: auto;
   width: 100%;
-      background: #fbfbfb;
-  padding-bottom: 60px;
+  background: #fbfbfb;
   position: relative;
+  margin-top: 20px;
 }
 #journal-blog {
   background: #fff;
@@ -644,6 +661,8 @@ font-size: 50px;
 #contact {
   height: auto;
   width: 100%;
+  border-top: 1px solid #ddd;
+  background: #fff;
 }
 
 .contact-details {
@@ -698,28 +717,29 @@ font-size: 50px;
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: #f7f7f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  /*    background: rgb(165 117 251 / 72%);*/
+  border-top: 1px solid #ddd;
+  padding: 15px 0;
+  color: #fff;
 }
 
-#footer .socials-media {
+.socials-media {
   width: 100%;
 }
 
-#footer .socials-media ul {
+.socials-media ul {
   display: inline-block;
   float: none;
   margin: 0 0 20px 0;
 }
 
-#footer .socials-media ul li {
+.socials-media ul li {
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
 
-#footer .socials-media ul li a {
+.socials-media ul li a {
   font-size: 24px;
   color: #999;
   letter-spacing: 0.1em;
@@ -733,7 +753,7 @@ font-size: 50px;
   transition: all 0.5s ease-in-out 0s;
 }
 
-#footer .socials-media ul li a:hover {
+.socials-media ul li a:hover {
   color: #b8a07e;
   -moz-transition: all 0.5s ease-in-out 0s;
   -ms-transition: all 0.5s ease-in-out 0s;
@@ -743,11 +763,13 @@ font-size: 50px;
 }
 
 #footer p {
-  font-size: 12px;
-  letter-spacing: 0.1em;
-  font-weight: 500;
+  font-size: 14px;
   margin-top: 0;
-  text-transform: uppercase;
+  color: #0a001d;
+  margin-bottom: 0;
+}
+#footer p a {
+  color: #4310a5;
 }
 
 .credits {
@@ -766,6 +788,7 @@ div#careertimeline {
     height: 2px;
     background: #eb008bcc;
     margin-bottom: -17px;
+        opacity: 0.5;
 }
 #careertimeline .timeline-info {
   text-align: center;
@@ -791,4 +814,69 @@ div#careertimeline {
     color: #2f2f2f;
     line-height: 22px;
     font-size: 16px;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*  skills
+/*-----------------------------------------------------------------------------------*/
+
+.skills, .other-skills {
+    margin-top: 30px;
+}
+
+.skills .section-title {
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.skill-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.skill-section .btn {
+        height: 30px;
+    line-height: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+.before-foot {
+    background: url(../images/b4foot-bg.svg) repeat top center / 100%;
+    padding: 40px 0 0;
+}
+
+.before-foot img {
+    max-width: 340px;
+    margin-top: 38px;
+    margin-bottom: -16px;
+}
+
+.before-foot .p-heading {
+    max-width: 500px;
+    margin: auto;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.speech-bubble {
+  position: relative;
+  background:     
+  background: #cae4e8;
+  color: #113a65;
+}
+
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 15px solid transparent;
+  border-top-color: #cae4e8;
+  border-bottom: 0;
+  border-left: 0;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
 }
