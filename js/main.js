@@ -155,4 +155,29 @@ $(window).load(function(){
     portfolioIsotope.isotope({ filter: $(this).data('filter') });
   });
 
-})
+
+  /**
+    * Modal big with sticky footer
+    */
+    var modalStickyFooter = new tingle.modal({
+        footer: true,
+        stickyFooter: true
+    });
+    var btn4 = document.querySelector('.js-tingle-modal-4');
+    btn4.addEventListener('click', function(){
+        modalStickyFooter.open();
+    });
+
+
+    modalStickyFooter.addFooterBtn('I agree', 'tingle-btn tingle-btn--primary tingle-btn--pull-right', function(){
+        modalStickyFooter.close();
+    });
+
+    modalStickyFooter.addFooterBtn('Cancel', 'tingle-btn tingle-btn--default tingle-btn--pull-right', function(){
+        modalStickyFooter.close();
+    });
+
+    modalStickyFooter.setContent(document.querySelector('.tingle-demo-sticky').innerHTML);
+    
+
+});
