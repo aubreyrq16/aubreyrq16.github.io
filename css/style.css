@@ -101,6 +101,7 @@ a.btn-primary {
     line-height: 30px;
 }
 
+
 .mt-20 {
   margin-top: 20px;
 }
@@ -152,10 +153,41 @@ p {
   border-color: #cae4e8;
   border-width: 2px;
 }
+
 .btn-primary:hover {
   background: transparent;
   color: #113a65 !important;
   border-color: #cae4e8;
+}
+.btn-primary:visited, .btn-primary:active {
+  background: #cae4e8;
+  color: #113a65;
+  border-color: #cae4e8;
+  border-width: 2px;
+}
+
+.btn-ghost-primary {
+  background: #fff;
+    color: #113a65;
+    border-color: #cae4e8;
+    border-width: 2px;
+    line-height: 30px;
+}
+
+.btn-ghost-primary:hover {
+  background: #cae4e8;
+  color: #113a65 !important;
+  border-color: #cae4e8;
+}
+
+.btn-ghost-primary i {
+  font-size: 21px;
+    margin-left: 10px;
+    font-weight: 900;
+}
+
+.btn-ghost-primary i.ion-ios-download-outline:before {
+    font-weight: 900;
 }
 
 .btn-rounded {
@@ -174,6 +206,11 @@ p {
 
 .btn:hover, .btn:focus {
   color: #fff;
+}
+
+.or-separator {
+  display: inline-block;
+  padding: 0 30px;
 }
 
 .padDiv {
@@ -240,7 +277,12 @@ p {
 .mt-40 {
   margin-top: 40px;
 }
-
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-60 {
+  margin-top: 60px;
+}
 .orange-underline{
       padding: 0 5px;
     box-shadow: inset 0 -8px 0 rgba(255, 126, 3, 0.7);
@@ -417,7 +459,6 @@ nav ul li a.active {
     font-family: Playfair Display;
     line-height: 60px;
     color: #2f2f2f;
-    letter-spacing: 
 }
 
 #about .about-descr .separator {
@@ -538,9 +579,9 @@ nav ul li a.active {
 #portfolio .p-heading span {
   box-shadow: inset 0 -22px 0 rgba(118, 45, 249, 0.7);
 }
-#portfolio .portfolio-list {
-/*  margin-bottom: 50px;
-*/}
+/* #portfolio .portfolio-list {
+ margin-bottom: 50px;
+}*/
 
 #portfolio .portfolio-list .nav {
   display: inline-block;
@@ -634,6 +675,7 @@ nav ul li a.active {
 }
 .portfolio-thumbnail .thecontent .proj-info .see-more {
   text-align: right;
+  display:none;
 }
 .portfolio-thumbnail .thecontent .proj-info .see-more a {
     padding: 0px 15px;
@@ -910,19 +952,24 @@ div#careertimeline {
 /*  skills
 /*-----------------------------------------------------------------------------------*/
 
-.skills, .other-skills {
-    margin-top: 30px;
+.skills {
+    margin-top: 40px;
+}
+
+.other-skills {
+  margin-top: 60px;
 }
 
 .skills .section-title {
   margin-bottom: 0;
-  text-align: left;
+  text-align: center;
 }
 
 .skill-section {
     margin-top: 30px;
-    text-align: left;
+    text-align: center;
 }
+
 
 .skill-section .btn {
         height: 30px;
@@ -951,7 +998,6 @@ div#careertimeline {
 
 .speech-bubble {
   position: relative;
-  background:     
   background: #cae4e8;
   color: #113a65;
 }
