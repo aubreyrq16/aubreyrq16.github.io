@@ -457,7 +457,6 @@ nav ul li a.active {
   height: auto;
   padding-top: 155px;
   padding-bottom: 20px;
-  background: url(../images/svc-bg.svg) repeat top center / 130%;
   background-color: #fff;
 }
 
@@ -496,6 +495,8 @@ nav ul li a.active {
 #services {
   padding-bottom: 50px;
   padding-top: 30px;
+  background: url(../images/svc-bg.svg) repeat top center / 130%;
+  background-color: rgb(251 219 142 / 5%);
 }
 
 #services .p-heading {
@@ -591,6 +592,7 @@ nav ul li a.active {
 
 #portfolio {
   position: relative;
+  padding-top: 30px;
 }
 
 #portfolio .p-heading {
@@ -601,6 +603,7 @@ nav ul li a.active {
 #portfolio .portfolio-list .nav {
   display: inline-block;
   margin: 0;
+  margin-bottom: 20px;
 }
 
 #portfolio .portfolio-list .nav li {
@@ -679,20 +682,20 @@ nav ul li a.active {
 
 .portfolio-thumbnail .thecontent .proj-info .proj-title {
   font-size: 18px;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 28px;
-  color: #000000;
-  display: inline-block;
-  background: #ffffffc7;
-  padding: 2px 15px;
+  color: #fff;
 }
 
 .portfolio-thumbnail .thecontent .proj-info .meta div {
   display: inline-block;
-  font-size: 11px;
-  text-transform: uppercase;
+  font-size: 14px;
   margin-bottom: 10px;
   margin-right: 5px;
+}
+
+.portfolio-thumbnail .thecontent .proj-info .meta div.ptype {
+  margin-left: 5px;
 }
 
 .portfolio-thumbnail .thecontent .proj-info .see-more {
@@ -719,6 +722,20 @@ nav ul li a.active {
 
 .portfolio-thumbnail .thecontent .proj-info .skill-section {
   text-align: left;
+}
+
+.portfolio-thumbnail .thecontent .proj-info .desc,
+.portfolio-thumbnail .thecontent .proj-info .skill-section {
+  display: none;
+}
+
+.portfolio-thumbnail:hover .thecontent .proj-info .desc,
+.portfolio-thumbnail:hover .thecontent .proj-info .skill-section {
+  display: block;
+}
+
+.portfolio-thumbnail:hover img {
+  opacity: 0.5;
 }
 
 /*-----------------------------------------------------------------------------------*/
