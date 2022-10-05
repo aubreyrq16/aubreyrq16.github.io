@@ -72,37 +72,6 @@ $(document).ready(function() {
   });
 
   // ========================================================================= //
-  //  Typed Js
-  // ========================================================================= //
-
-  var typed = $(".typed");
-
-  $(function() {
-    typed.typed({
-/*      strings: ["Aubrey.", "a Web Developer.", "a Hobbyist Artist.", "a Coffee Lover!"],
-*/      strings: ["I'm Aubrey."],
-      typeSpeed: 50,
-      loop: false,
-    });
-  });
-
-
-  // ========================================================================= //
-  //  Owl Carousel Services
-  // ========================================================================= //
-
-
-  $('.services-carousel').owlCarousel({
-      autoplay: true,
-      loop: true,
-      margin: 20,
-      dots: true,
-      nav: false,
-      responsiveClass: true,
-      responsive: { 0: { items: 1 }, 768: { items: 2 }, 900: { items: 4 } }
-    });
-
-  // ========================================================================= //
   //  magnificPopup
   // ========================================================================= //
 
