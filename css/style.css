@@ -525,14 +525,11 @@ nav ul li a.active {
 }
 
 #services .svc-icon {
-  padding: 15px;
-  font-size: 30px;
+  padding: 10px;
+  font-size: 40px;
+  background: url(../images/svcbg.svg) no-repeat center center / contain;
+  color: #2f2f2f;
 }
-
-/* #services .svc-icon img {
-  opacity: 0.75;
-  height: 55px;
-} */
 
 #services p.title {
   font-weight: 700;
@@ -879,13 +876,15 @@ div#careertimeline {
 #careertimeline .liner {
   width: 100%;
   height: 3px;
-  margin-bottom: -17px;
+  margin-bottom: -15px;
   border-bottom: 3px dashed #e6e6e6;
 }
 
 #careertimeline .bullet {
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
+  color: #aaa;
+  transition: all 0s;
 }
 
 #careertimeline .timeline-info {
