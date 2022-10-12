@@ -75,8 +75,20 @@ $(document).ready(function () {
   })
 
   // ========================================================================= //
-  //  magnificPopup
+  //  Typed Js
   // ========================================================================= //
+
+  var typed = $('.typed')
+
+  $(function () {
+    typed.typed({
+      strings: ['World!', "I'm Aubrey."],
+      loop: false,
+      typeSpeed: 100,
+      backSpeed: 50,
+      backDelay: 2000
+    })
+  })
 })
 
 // ========================================================================= //
@@ -103,9 +115,12 @@ $(window).load(function () {
     stickyFooter: true
   })
   var btn4 = document.querySelector('.js-tingle-modal-4')
-  btn4.addEventListener('click', function () {
-    modalStickyFooter.open()
-  })
+
+  if (btn4) {
+    btn4.addEventListener('click', function () {
+      modalStickyFooter.open()
+    })
+  }
 
   modalStickyFooter.addFooterBtn(
     'I agree',

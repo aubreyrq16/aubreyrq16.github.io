@@ -226,18 +226,18 @@ p {
 }
 
 .btn-rounded {
-  background: rgb(255 126 3 / 10%);
+  background: #fff2e5;
   color: #565656;
   border-width: 2px;
   border-radius: 50px;
-  line-height: 30px;
+  line-height: 15px;
   text-align: center;
+  border: 1px solid #dbdbdb;
 }
 
 .btn-rounded:hover {
-  background: transparent;
-  color: rgb(255 126 3) !important;
-  border: 2px rgb(255 126 3) solid;
+  color: #565656 !important;
+  border: 1px rgb(255 126 3) solid;
 }
 
 .btn:hover,
@@ -421,7 +421,6 @@ nav ul li a.active {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background: url(../images/banner-main.svg) no-repeat right bottom / 50%;
 }
 
 .header-content h1 {
@@ -497,8 +496,12 @@ nav ul li a.active {
 #services {
   padding-bottom: 30px;
   padding-top: 30px;
-  background: url(../images/svc-bg.svg) repeat top center / 130%;
-  background-color: rgb(251 219 142 / 5%);
+  background: url(../images/svc-bg.svg) no-repeat bottom center / cover;
+  background-color: rgb(251 219 142 / 2%);
+}
+
+#services .svc-col {
+  display: inline-flex;
 }
 
 #services .p-heading {
@@ -508,26 +511,31 @@ nav ul li a.active {
 }
 
 #services .svc-content {
-  padding: 20px;
+  padding: 30px 15px;
   background: #fff;
   border-radius: 5px;
   border: 1px solid #f1f1f1;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 #services .svc-icon {
-  background: url(../images/svcbg.svg) no-repeat center center / contain;
-  padding: 25px;
+  padding: 15px;
+  font-size: 30px;
 }
 
-#services .svc-icon img {
+/* #services .svc-icon img {
   opacity: 0.75;
   height: 55px;
-}
+} */
 
 #services p.title {
   font-weight: 700;
   color: #2f2f2f;
   margin: 10px;
+  line-height: 24px;
 }
 
 .owl-item {
@@ -720,6 +728,7 @@ nav ul li a.active {
 
 .portfolio-thumbnail .thecontent .proj-info .skill-section {
   text-align: left;
+  margin-top: 25px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -812,7 +821,7 @@ nav ul li a.active {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  background: rgb(255 126 3 / 10%);
+  background: #fff2e5;
   padding: 5px 0;
   color: #fff;
 }
@@ -859,13 +868,9 @@ nav ul li a.active {
 #footer p {
   font-size: 14px;
   margin-top: 0;
-  color: #0a001d;
   margin-bottom: 0;
 }
 
-#footer p a {
-  color: #4310a5;
-}
 
 .credits {
   font-size: 13px;
@@ -929,10 +934,6 @@ div#careertimeline {
   margin-top: 20px;
 }
 
-.other-skills {
-  margin-top: 60px;
-}
-
 .skills .section-title {
   margin-bottom: 0;
   text-align: center;
@@ -943,14 +944,13 @@ div#careertimeline {
 }
 
 .skill-section {
-  margin-top: 30px;
   text-align: center;
 }
 
 
 .skill-section .btn {
-  height: 30px;
-  line-height: 5px;
+  line-height: 10px;
+  height: auto;
   margin-bottom: 5px;
   font-size: 14px;
 }
