@@ -303,6 +303,9 @@
   #careertimeline .liner {
     display: none;
   }
+  #footer p {
+    text-align: center;
+  }
 }
 
 /** Width between 320px to 0
