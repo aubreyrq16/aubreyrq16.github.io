@@ -66,9 +66,7 @@
 }
 
 body {
-  /*  background: #ebf7ec;
-*/
-  background: #fbfbfb;
+  background-color: #fafafa;
   color: #6b6b6b;
   font-family: 'Nunito';
   font-size: 16px;
@@ -228,7 +226,7 @@ p {
 }
 
 .btn-rounded {
-  background: #dbe4e0;
+  background: rgb(255 126 3 / 10%);
   color: #565656;
   border-width: 2px;
   border-radius: 50px;
@@ -238,8 +236,8 @@ p {
 
 .btn-rounded:hover {
   background: transparent;
-  color: #00c973 !important;
-  border: 2px #00c973 solid;
+  color: rgb(255 126 3) !important;
+  border: 2px rgb(255 126 3) solid;
 }
 
 .btn:hover,
@@ -497,7 +495,7 @@ nav ul li a.active {
 /*-----------------------------------------------------------------------------------*/
 
 #services {
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   padding-top: 30px;
   background: url(../images/svc-bg.svg) repeat top center / 130%;
   background-color: rgb(251 219 142 / 5%);
@@ -513,7 +511,7 @@ nav ul li a.active {
   padding: 20px;
   background: #fff;
   border-radius: 5px;
-  border: 1px solid #fbfbfb;
+  border: 1px solid #f1f1f1;
 }
 
 #services .svc-icon {
@@ -626,6 +624,7 @@ nav ul li a.active {
   -o-transition: all 0.5s ease-in-out 0s;
   -webkit-transition: all 0.5s ease-in-out 0s;
   transition: all 0.5s ease-in-out 0s;
+  text-align: left;
 }
 
 #portfolio .portfolio-list .nav li:hover,
@@ -657,6 +656,9 @@ nav ul li a.active {
 
 .portfolio-thumbnail .thecontent {
   position: relative;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 .portfolio-thumbnail .thecontent .thumbnail {
@@ -669,7 +671,7 @@ nav ul li a.active {
 
 .portfolio-thumbnail .thecontent .proj-info {
   text-align: left;
-  padding: 15px 0;
+  padding: 30px 20px;
   -moz-transition: all 0s;
   -ms-transition: all 0s;
   -o-transition: all 0s;
@@ -688,6 +690,10 @@ nav ul li a.active {
   color: #2f2f2f;
 }
 
+.portfolio-thumbnail .thecontent .meta {
+  font-size: 14px;
+}
+
 .portfolio-thumbnail .thecontent .proj-info .meta div {
   display: inline-block;
   font-size: 14px;
@@ -704,15 +710,6 @@ nav ul li a.active {
   display: none;
 }
 
-.portfolio-thumbnail .thecontent .proj-info .see-more a {
-  padding: 0px 15px;
-  border-radius: 5px;
-  font-size: 12px;
-  margin-top: 12px;
-  display: inline-block;
-  color: #fff;
-}
-
 .portfolio-thumbnail .thecontent .proj-info .see-more i {
   margin-left: 5px;
 }
@@ -723,94 +720,6 @@ nav ul li a.active {
 
 .portfolio-thumbnail .thecontent .proj-info .skill-section {
   text-align: left;
-}
-
-.portfolio-thumbnail .thecontent .proj-info .desc,
-.portfolio-thumbnail .thecontent .proj-info .skill-section {
-  display: none;
-}
-
-.portfolio-thumbnail:hover .thecontent .proj-info .desc,
-.portfolio-thumbnail:hover .thecontent .proj-info .skill-section {
-  display: block;
-}
-
-.portfolio-thumbnail:hover .proj-info {
-  position: absolute;
-  top: 0;
-  padding: 25px;
-  background: 0 rgb(255 255 255/ 80%);
-  height: 100%;
-}
-
-/*-----------------------------------------------------------------------------------*/
-/*  Journal
-/*-----------------------------------------------------------------------------------*/
-
-#journal,
-#journal-blog {
-  height: auto;
-  width: 100%;
-  background: #fbfbfb;
-  position: relative;
-  margin-top: 20px;
-}
-
-#journal-blog {
-  background: #fff;
-  padding-bottom: 30px;
-}
-
-#journal .journal-block {
-  display: inline-block;
-  height: auto;
-  width: 100%;
-}
-
-#journal .journal-block .journal-info {
-  position: relative;
-}
-
-#journal iframe {
-  min-width: 100% !important;
-}
-
-.journal-block .journal-info img {
-  max-width: 100%;
-}
-
-.journal-block .journal-info .journal-txt {
-  padding: 25px 0px;
-  position: relative;
-}
-
-.journal-block .journal-info .journal-txt h4 a {
-  display: block;
-  font-size: 19px;
-  line-height: 24px;
-  margin: 0 0 13px 0;
-  font-weight: 500;
-  color: #292929;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt h4 a:hover {
-  color: #b8a07e;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-}
-
-.journal-block .journal-info .journal-txt p {
-  margin: 0;
-  font-size: 14px;
-  line-height: 24px;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -903,9 +812,8 @@ nav ul li a.active {
 /*-----------------------------------------------------------------------------------*/
 
 #footer {
-  /*    background: rgb(165 117 251 / 72%);*/
-  border-top: 1px solid #ddd;
-  padding: 15px 0;
+  background: rgb(255 126 3 / 10%);
+  padding: 5px 0;
   color: #fff;
 }
 
@@ -969,12 +877,13 @@ nav ul li a.active {
 
 div#careertimeline {
   margin: 75px 0;
+  margin-bottom: 45px;
 }
 
 #careertimeline .liner {
   width: 100%;
   height: 2px;
-  background: #eb008bcc;
+  background: rgb(0 0 0 / 30%);
   margin-bottom: -17px;
   opacity: 0.5;
 }
@@ -1048,7 +957,7 @@ div#careertimeline {
 
 .before-foot {
   background: url(../images/svc-bg.svg) repeat top center / 130%;
-  padding: 40px 0;
+  padding: 40px 0 20px;
 }
 
 .before-foot img {
