@@ -154,6 +154,10 @@ nav ul li a {
   transition: all 0.5s ease-in-out 0s;
 }
 
+.text-dark {
+  color: #2f2f2f;
+}
+
 p {
   margin: 25px 0;
   padding: 0;
@@ -655,25 +659,22 @@ nav ul li a.active {
   position: relative;
 }
 
+.portfolio-thumbnail .thecontent .thumbnail {
+  max-height: 300px;
+  overflow: hidden;
+  height: 300px;
+  display: flex;
+  align-items: start;
+}
+
 .portfolio-thumbnail .thecontent .proj-info {
   text-align: left;
-  padding: 25px;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  overflow: auto;
-  max-height: 100%;
-  background: rgb(0 0 0 / 3%);
-  color: #fff;
-  -moz-transition: all 0.5s ease-in-out 0s;
-  -ms-transition: all 0.5s ease-in-out 0s;
-  -o-transition: all 0.5s ease-in-out 0s;
-  -webkit-transition: all 0.5s ease-in-out 0s;
-  transition: all 0.5s ease-in-out 0s;
-  cursor: pointer;
-  background-image: linear-gradient(rgb(255 255 255 / 0), rgb(20 60 78));
-  bottom: 0;
-  height: auto;
+  padding: 15px 0;
+  -moz-transition: all 0s;
+  -ms-transition: all 0s;
+  -o-transition: all 0s;
+  -webkit-transition: all 0s;
+  transition: all 0s;
 }
 
 .portfolio-thumbnail .thecontent:hover .proj-info {
@@ -684,7 +685,7 @@ nav ul li a.active {
   font-size: 18px;
   font-weight: 700;
   line-height: 28px;
-  color: #fff;
+  color: #2f2f2f;
 }
 
 .portfolio-thumbnail .thecontent .proj-info .meta div {
@@ -734,8 +735,12 @@ nav ul li a.active {
   display: block;
 }
 
-.portfolio-thumbnail:hover img {
-  opacity: 0.5;
+.portfolio-thumbnail:hover .proj-info {
+  position: absolute;
+  top: 0;
+  padding: 25px;
+  background: 0 rgb(255 255 255/ 80%);
+  height: 100%;
 }
 
 /*-----------------------------------------------------------------------------------*/
@@ -1022,6 +1027,10 @@ div#careertimeline {
 .skills .section-title {
   margin-bottom: 0;
   text-align: center;
+}
+
+.skills .section-title p {
+  color: #2f2f2f;
 }
 
 .skill-section {
