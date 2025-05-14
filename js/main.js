@@ -40,7 +40,7 @@ $(document).ready(function () {
       )
   })
 
-  function onScroll (event) {
+  function onScroll(event) {
     if ($('.home').length) {
       var scrollPos = $(document).scrollTop()
       $('nav ul li a').each(function () {
@@ -51,43 +51,10 @@ $(document).ready(function () {
   }
 
   // ========================================================================= //
-  //  //NAVBAR SHOW - HIDE
-  // ========================================================================= //
-
-  /*$(window).scroll(function() {
-    var scroll = $(window).scrollTop();
-    if (scroll > 200 ) {
-      $("#main-nav, #main-nav-subpage").fadeIn(500);
-      $("#main-nav-subpage").removeClass('subpage-nav');
-    } else {
-      $("#main-nav").slideUp(700);
-      $("#main-nav-subpage").hide();
-      $("#main-nav-subpage").addClass('subpage-nav');
-    }
-  });*/
-
-  // ========================================================================= //
   //  // RESPONSIVE MENU
   // ========================================================================= //
-
   $('.responsive').on('click', function (e) {
     $('.nav-menu').slideToggle()
-  })
-
-  // ========================================================================= //
-  //  Typed Js
-  // ========================================================================= //
-
-  var typed = $('.typed')
-
-  $(function () {
-    typed.typed({
-      strings: ['World!', "I'm Aubrey."],
-      loop: false,
-      typeSpeed: 100,
-      backSpeed: 50,
-      backDelay: 2000
-    })
   })
 })
 
@@ -106,39 +73,4 @@ $(window).load(function () {
 
     portfolioIsotope.isotope({ filter: $(this).data('filter') })
   })
-
-  /**
-   * Modal big with sticky footer
-   */
-  var modalStickyFooter = new tingle.modal({
-    footer: true,
-    stickyFooter: true
-  })
-  var btn4 = document.querySelector('.js-tingle-modal-4')
-
-  if (btn4) {
-    btn4.addEventListener('click', function () {
-      modalStickyFooter.open()
-    })
-  }
-
-  modalStickyFooter.addFooterBtn(
-    'I agree',
-    'tingle-btn tingle-btn--primary tingle-btn--pull-right',
-    function () {
-      modalStickyFooter.close()
-    }
-  )
-
-  modalStickyFooter.addFooterBtn(
-    'Cancel',
-    'tingle-btn tingle-btn--default tingle-btn--pull-right',
-    function () {
-      modalStickyFooter.close()
-    }
-  )
-
-  modalStickyFooter.setContent(
-    document.querySelector('.tingle-demo-sticky').innerHTML
-  )
 })
