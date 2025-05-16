@@ -2,75 +2,39 @@
 $(document).ready(function () {
   'use strict'
 
-  // ========================================================================= //
-  //  //SMOOTH SCROLL
-  // ========================================================================= //
+  $('.delay-el').each(function (index) {
+    const $el = $(this)
 
-  $(document).on('scroll', onScroll)
+    setTimeout(function () {
+      $el.fadeIn(500)
 
-  $('a[href^="#"]').on('click', function (e) {
-    e.preventDefault()
-    $(document).off('scroll')
-
-    $('a').each(function () {
-      $(this).removeClass('active')
       if ($(window).width() < 768) {
-        $('.nav-menu').slideUp()
+        $('html, body').animate({
+          scrollTop: $('.delay-el.message').offset().top
+        }, 2000)
       }
-    })
 
-    $(this).addClass('active')
+      if (index === $('.delay-el').length - 1) {
+        $('.display-on-click').show()
 
-    var target = this.hash,
-      menu = target
+        var portfolioIsotope = $('.portfolio-container').isotope({
+          itemSelector: '.portfolio-thumbnail',
+          layoutMode: 'fitRows'
+        })
 
-    target = $(target)
-    $('html, body')
-      .stop()
-      .animate(
-        {
-          scrollTop: target.offset().top - 80
-        },
-        500,
-        'swing',
-        function () {
-          window.location.hash = target.selector
-          $(document).on('scroll', onScroll)
-        }
-      )
+        $('#portfolio-flters li').on('click', function () {
+          $('#portfolio-flters li').removeClass('filter-active')
+          $(this).addClass('filter-active')
+
+          portfolioIsotope.isotope({ filter: $(this).data('filter') })
+        })
+      }
+    }, index * 2000)
   })
 
-  function onScroll(event) {
-    if ($('.home').length) {
-      var scrollPos = $(document).scrollTop()
-      $('nav ul li a').each(function () {
-        var currLink = $(this)
-        var refElement = $(currLink.attr('href'))
-      })
-    }
-  }
-
-  // ========================================================================= //
-  //  // RESPONSIVE MENU
-  // ========================================================================= //
-  $('.responsive').on('click', function (e) {
-    $('.nav-menu').slideToggle()
-  })
-})
-
-// ========================================================================= //
-//  Porfolio isotope and filter
-// ========================================================================= //
-$(window).load(function () {
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-thumbnail',
-    layoutMode: 'fitRows'
-  })
-
-  $('#portfolio-flters li').on('click', function () {
-    $('#portfolio-flters li').removeClass('filter-active')
-    $(this).addClass('filter-active')
-
-    portfolioIsotope.isotope({ filter: $(this).data('filter') })
+  $('#showSectionsBtn').click(function () {
+    $('html, body').animate({
+      scrollTop: $('#services').offset().top
+    }, 500)
   })
 })

@@ -10,14 +10,6 @@
   }
 }
 
-/** Width between 992px to 1199px
- *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- */
-
-@media (min-width: 992px) and (max-width: 1199px) {
-  
-}
-
 /** Width between 768px to 991px
  *  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  */
@@ -137,6 +129,17 @@
     max-width: 100%;
     margin-bottom: 0;
   }
+  #intro {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #intro .about-img {
+    margin-bottom: 1.5rem;
+  }
+  #intro .speech-bubble {
+    border-radius: 0 15px 15px 15px;
+  }
+
   /* portfolio */
   #portfolio .portfolio-list .nav li {
     float: none;
