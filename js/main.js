@@ -14,3 +14,8 @@ $(document).ready(function () {
     portfolioIsotope.isotope({ filter: $(this).data('filter') })
   })
 });
+
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
+});
