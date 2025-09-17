@@ -11,6 +11,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  background-image: linear-gradient(25deg, #c8bee0, #cfbebd, #e3d3a2, #e9e5b6);
+  background-attachment: fixed;
 }
 
 h1,
@@ -27,4 +29,10 @@ h6 {
 .ghost-title {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
+}
+
+.modal {
+  max-width: 100%;
+  overflow-y: scroll;
+  max-height: 100vh;
 }
