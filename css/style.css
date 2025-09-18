@@ -11,6 +11,8 @@
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  background: linear-gradient(357.14deg, #fff 30.18%, rgba(255, 255, 255, 0) 62.27%), radial-gradient(50% 50% at 50% 50%, #fff 0, rgba(255, 255, 255, 0) 100%), linear-gradient(75deg, #bad2ea 19.7%, rgba(224, 230, 238, 0) 66.51%), linear-gradient(25.32deg, #ff9abc 23.7%, rgba(210, 123, 61, 0) 85.02%), linear-gradient(140.23deg, #f37a23 -3.96%, rgba(210, 123, 61, 0) 59.99%), linear-gradient(194.04deg, #efca6f -17.13%, rgba(242, 204, 118, 0) 29.34%), linear-gradient(236.09deg, #d78ca5 4.2%, rgba(215, 140, 165, 0) 45.07%), #fff9f9;
+  background-attachment: fixed;
 }
 
 h1,
@@ -27,4 +29,27 @@ h6 {
 .ghost-title {
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke: 1px;
+}
+
+.portfolio .portfolio-thumbnail,
+.skills .skill-grid-item {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.1px);
+  -webkit-backdrop-filter: blur(9.1px);
+}
+
+.portfolio .role ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+}
+
+.portfolio .role ul li {
+  margin-bottom: 0.5rem;
+}
+
+.portfolio-page .screenshots img {
+  border-radius: 15px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 }

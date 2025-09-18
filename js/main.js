@@ -1,16 +1,10 @@
-/*global $, jQuery, alert*/
-$(document).ready(function () {
-  'use strict'
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+};
 
-  var portfolioIsotope = $('.portfolio-container').isotope({
-    itemSelector: '.portfolio-thumbnail',
-    layoutMode: 'fitRows'
-  })
-
-  $('#filter-portfolio-nav .filter').on('click', function () {
-    $('#filter-portfolio-nav .filter').removeClass('font-bold')
-    $(this).addClass('font-bold')
-
-    portfolioIsotope.isotope({ filter: $(this).data('filter') })
-  })
+// Initialize Lenis
+const lenis = new Lenis({
+  autoRaf: true,
 });
+
+AOS.init();
