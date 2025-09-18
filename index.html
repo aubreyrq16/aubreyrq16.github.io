@@ -13,9 +13,9 @@
 </head>
 
 <body class="bg-stone-100 text-gray-900">
-  <main class="min-h-screen flex flex-col items-center py-6">
+  <main class="min-h-screen flex flex-col items-center py-6 px-3 max-w-[100vw] overflow-x-hidden">
     <!-- Hero -->
-    <section class="hero text-center flex flex-col items-center justify-center mb-4 min-h-[100vh] w-full"
+    <section class="hero text-center flex flex-col items-center justify-center mb-4 min-h-[85vh] w-full"
       data-aos="fade-up">
       <div class="about-image rounded-full p-2 relative">
         <img src="images/scroll-flair-3.png" alt="Aubrey Rose Quisumbing" class="rounded-full h-25 w-auto mx-auto" />
@@ -27,302 +27,321 @@
         <h1 class="section-title text-8xl md:text-[10rem]">Aubrey</h1>
       </div>
       <p class="md:max-w-6/12">
-        A web developer with over 11 years of experience in building
-        web applications, websites, and e-commerce solutions for
-        diverse industries. Committed to delivering effective
-        results by understanding and aligning with both client and
-        user needs.
+        An full-stack web developer with over a decade of experience creating web applications, websites, and e-commerce
+        solutions. Focused on building effective, user-driven solutions that meet client goals.
       </p>
     </section>
+
     <!-- Portfolio -->
-    <section class="portfolio container">
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-        <div class="section-header text-left mb-[2rem] w-full md:w-3/5">
+    <section class="portfolio container mb-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+        <div class="section-header text-left mb-[2rem] w-full md:w-3/5" data-aos="fade-down-right">
           <h1 class="ghost-title text-8xl md:text-[10rem] md:leading-30 text-violet-900 mb-[-3rem] ml-[-5rem]">Portfolio
           </h1>
-          <h1 class="section-title text-8xl md:text-[6rem]">Recent works</h1>
+          <h1 class="section-title text-6xl md:text-[6rem]">Selected works</h1>
         </div>
-        <div class="portfolio-container w-full">
+        <div class="portfolio-container w-full" data-aos="fade-left">
           <!-- Biological Innovations -->
-          <div class="portfolio-thumbnail all website w-full p-3 mb-4">
-            <div class="thecontent border p-3 rounded-lg overflow-hidden">
-              <div class="thumbnail h-auto lg:h-[17rem] overflow-hidden rounded-lg">
-                <img src="images/portfolio/bi-thumb.gif" alt="img" class="w-full" />
-              </div>
-              <div class="proj-info p-5 flex flex-col gap-3">
-                <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
-                  <div class="period text-gray-600 mb-[-10px] text-violet-900">2025</div>
+          <a href="portfolio/biological-innovations.html">
+            <div class="portfolio-thumbnail all website w-full p-3 mb-5">
+              <div class="thecontent rounded-lg overflow-hidden cursor-pointer">
+                <div class="thumbnail overflow-hidden rounded-lg">
+                  <img src="images/portfolio/bi-thumb.gif" alt="img"
+                    class="w-full object-cover object-top-left h-auto lg:h-[20rem]" />
                 </div>
-                <h3 class="proj-title text-2xl font-bold">Biological Innovations</h3>
-                <div class="desc">
-                  A website for a company that develops and supplies autologous and ready-to-use biologic products for
-                  regenerative care.
-                </div>
-                <div class="tags flex flex-row gap-2 flex-wrap mt-2">
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    WordPress</div>
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    Elementor</div>
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    Design</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="portfolio-thumbnail all webapp w-full p-3">
-            <div class="thecontent border bg-stone-50 border-gray-800 rounded-lg overflow-hidden">
-              <div class="thumbnail h-auto lg:h-[17rem] overflow-hidden">
-                <img src="images/portfolio/minski.png" alt="img" class="w-full" />
-              </div>
-              <div class="proj-info p-3 pb-4 flex flex-col gap-3">
-                <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
-                  <div class="period text-gray-600 mb-[-10px]">2021 - 2025</div>
-                  <div class="ptype text-violet-400 font-bold">Web App</div>
-                </div>
-                <h3 class="proj-title text-2xl">Minski</h3>
-                <div class="desc text-sm">
-                  A Customer Relationship Management (CRM) platform to streamline the management of Solar and Home
-                  Improvement projects across the United
-                  States.
-                </div>
-                <div class="tags flex flex-row gap-2 flex-wrap mt-2">
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    VueJS</div>
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    Laravel</div>
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    API Integrations</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-thumbnail all webapp w-full p-3">
-            <div class="thecontent border bg-stone-50 border-gray-800 rounded-lg overflow-hidden">
-              <div class="thumbnail h-auto lg:h-[17rem] overflow-hidden">
-                <img src="images/portfolio/apprv.png" alt="img" class="w-full" />
-              </div>
-              <div class="proj-info p-3 pb-4 flex flex-col gap-3">
-                <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
-                  <div class="period text-gray-600 mb-[-10px]">2021</div>
-                  <div class="ptype text-violet-400 font-bold">Web App</div>
-                </div>
-                <h3 class="proj-title text-2xl">Apprv</h3>
-                <div class="desc text-sm">
-                  A Customer Relationship Management (CRM) platform that provides a centralized, easy-to-use dashboard
-                  that tracks credit reports, monitors score changes, and identifies factors affecting credit
-                  performance.
-                </div>
-                <div class="tags flex flex-row gap-2 flex-wrap mt-2">
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    CodeIgniter</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="portfolio-thumbnail all website w-full p-3">
-            <div class="thecontent border bg-stone-50 border-gray-800 rounded-lg overflow-hidden">
-              <div class="thumbnail h-[15rem] lg:h-[17rem] overflow-hidden">
-                <img src="images/portfolio/boon.png" alt="img" class="w-full" />
-              </div>
-              <div class="proj-info p-3 pb-4 flex flex-col gap-3">
-                <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
-                  <div class="period text-gray-600 mb-[-10px]">2020</div>
-                  <div class="ptype text-violet-400 font-bold">Website</div>
-                </div>
-                <h3 class="proj-title text-2xl">Symphony</h3>
-                <div class="desc text-sm">
-                  A corporate portfolio website showcasing the products and services
-                  of a Singapore-based client.
-                </div>
-                <div class="tags flex flex-row gap-2 flex-wrap mt-2">
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    WordPress
+                <div class="proj-info py-5 px-3 pb-3 flex flex-col gap-3">
+                  <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
+                    <div class="period text-gray-600 mb-[-10px] text-violet-900">2025</div>
                   </div>
-                  <div class="rounded-full bg-gray-200 text-gray-900 text-sm inline-block text-sm px-2 py-1">
-                    Elementor
+                  <h3 class="proj-title text-3xl font-bold">Biological Innovations</h3>
+                  <div class="desc">
+                    A website for a company that develops and supplies autologous and ready-to-use biologic products for
+                    regenerative care.
+                  </div>
+                  <div class="flex flex-wrap items-center">
+                    <div class="tags flex flex-row gap-2 flex-wrap grow-1 mt-2 w-full md:w-auto">
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        WordPress</div>
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        Elementor</div>
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        Design</div>
+                    </div>
+                    <div class="learn-more text-violet-900 mt-8 md:mt-0 ">
+                      <span>Learn more</span>
+                      <i class="bi bi-arrow-right ml-2"></i>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
+          </a>
+          <!-- MINSKI -->
+          <a href="portfolio/minski.html">
+            <div class="portfolio-thumbnail all webapp w-full p-3 mb-5">
+              <div class="thecontent rounded-lg overflow-hidden">
+                <div class="thumbnail overflow-hidden rounded-lg">
+                  <img src="images/portfolio/minski.png" alt="img"
+                    class="w-full object-cover object-top-left h-auto lg:h-[20rem]" />
+                </div>
+                <div class="proj-info py-5 px-3 pb-3 flex flex-col gap-3">
+                  <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
+                    <div class="period text-gray-600 mb-[-10px] text-violet-900">2021 - 2025</div>
+                  </div>
+                  <h3 class="proj-title text-3xl font-bold">Minski</h3>
+                  <div class="desc">
+                    A multi-tenancy customer Relationship Management (CRM) platform to streamline the management of
+                    Solar and
+                    Home Improvement projects across the United States.
+                  </div>
+                  <div class="flex flex-wrap items-center">
+                    <div class="tags flex flex-row gap-2 flex-wrap grow-1 mt-2 w-full md:w-auto">
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        VueJS</div>
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        Laravel</div>
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        API Integrations</div>
+                    </div>
+                    <div class="learn-more text-violet-900 mt-8 md:mt-0 ">
+                      <span>Learn more</span>
+                      <i class="bi bi-arrow-right ml-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <!-- Boon -->
+          <a href="portfolio/symphony.html">
+            <div class="portfolio-thumbnail all website w-full p-3">
+              <div class="thecontent rounded-lg overflow-hidden">
+                <div class="thumbnail overflow-hidden rounded-lg">
+                  <img src="images/portfolio/boon.png" alt="img"
+                    class="w-full object-cover object-top-left h-auto lg:h-[20rem]" />
+                </div>
+                <div class="proj-info py-5 px-3 pb-3 flex flex-col gap-3">
+                  <div class="meta flex flex-row items-center justify-between gap-2 text-sm">
+                    <div class="period text-gray-600 mb-[-10px] text-violet-900">2020</div>
+                  </div>
+                  <h3 class="proj-title text-3xl font-bold">Symphony</h3>
+                  <div class="desc">
+                    A corporate portfolio website showcasing the products and services
+                    of a Singapore-based client.
+                  </div>
+                  <div class="flex flex-wrap items-center">
+                    <div class="tags flex flex-row gap-2 flex-wrap grow-1 mt-2 w-full md:w-auto">
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        WordPress
+                      </div>
+                      <div
+                        class="rounded-full border border-gray-500 text-gray-900 text-sm inline-block text-sm px-3 py-2">
+                        Elementor
+                      </div>
+                    </div>
+                    <div class="learn-more text-violet-900 mt-8 md:mt-0">
+                      <span>Learn more</span>
+                      <i class="bi bi-arrow-right ml-2"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </a>
         </div>
       </div>
+    </section>
 
-    </section>
-    <!-- Skills -->
-    <section class="skills p-4 w-full">
-      <div>
-        <div class="skills-list grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-          <div class="skill-grid-item bg-stone-50 p-4 border border-gray-800 rounded-lg pb-8" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back">
-            <div class="section-header text-left mb-3">
-              <h1 class="ghost-title text-7xl text-violet-900 mb-[-1rem]">01</h1>
-              <h1 class="section-title text-2xl ml-5">Front-end Development</h1>
-            </div>
-            <ul class="list-disc list-inside mt-2 space-y-2">
-              <li>VueJS</li>
-              <li>AngularJS</li>
-              <li>TypeScript</li>
-            </ul>
-          </div>
-          <div class="skill-grid-item bg-stone-50 p-4 border border-gray-800 rounded-lg pb-8" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back" data-aos-delay="100">
-            <div class="section-header text-left mb-3">
-              <h1 class="ghost-title text-7xl text-violet-900 mb-[-1rem]">02</h1>
-              <h1 class="section-title text-2xl ml-5">Back-end Development</h1>
-            </div>
-            <ul class="list-disc list-inside mt-2 space-y-2">
-              <li>PHP, Laravel</li>
-              <li>MySQL, MongoDB</li>
-              <li>API Development and Integrations</li>
-            </ul>
-          </div>
-          <div class="skill-grid-item bg-stone-50 p-4 border border-gray-800 rounded-lg pb-8" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back" data-aos-delay="200">
-            <div class="section-header text-left mb-3">
-              <h1 class="ghost-title text-7xl text-violet-900 mb-[-1rem]">03</h1>
-              <h1 class="section-title text-2xl ml-5">E-commerce Development</h1>
-            </div>
-            <ul class="list-disc list-inside mt-2 space-y-2">
-              <li>Magento</li>
-              <li>WooCommerce</li>
-              <li>Shopify</li>
-            </ul>
-          </div>
-          <div class="skill-grid-item bg-stone-50 p-4 border border-gray-800 rounded-lg pb-8" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back" data-aos-delay="300">
-            <div class=" section-header text-left mb-3">
-              <h1 class="ghost-title text-7xl text-violet-900 mb-[-1rem]">04</h1>
-              <h1 class="section-title text-2xl ml-5">Website Development</h1>
-            </div>
-            <ul class="list-disc list-inside mt-2 space-y-2">
-              <li>HTML, CSS, Vanilla JavaScript</li>
-              <li>SASS, Tailwind CSS, Bootstrap</li>
-              <li>WordPress, Elementor</li>
-            </ul>
-          </div>
-          <div class="skill-grid-item bg-stone-50 p-4 border border-gray-800 rounded-lg pb-8" data-aos="fade-zoom-in"
-            data-aos-easing="ease-in-back" data-aos-delay="400">
-            <div class="section-header text-left mb-3">
-              <h1 class="ghost-title text-7xl text-violet-900 mb-[-1rem]">05</h1>
-              <h1 class="section-title text-2xl ml-5">Tools & Other Knowledge</h1>
-            </div>
-            <ul class="list-disc list-inside mt-2 space-y-2">
-              <li>JIRA, Confluence, Trello</li>
-              <li>Git, Github, Bitbucket</li>
-              <li>SonarQube</li>
-              <li>Agile, Scrum, Kanban Methodologies</li>
-              <li>Product Documentation</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Work Experience -->
     <section class="experiences flex flex-col gap-4">
-      <div class="section-header text-left mb-6">
-        <h1 class="ghost-title text-violet-900 text-7xl md:text-8xl mb-[-3rem] ml-[-5rem]">Work Experience</h1>
-        <h1 class="section-title text-5xl">My Career Journey</h1>
+      <div class="section-header text-center mb-[2rem] w-full" data-aos="fade-down">
+        <h1 class="ghost-title text-8xl md:text-[10rem] md:leading-30 text-violet-900 mb-[-3rem] ml-[-5rem]">Work
+          Experience
+        </h1>
+        <h1 class="section-title text-6xl md:text-[6rem]">My Career Journey</h1>
       </div>
-      <div class="experiences-list">
-        <div
-          class="experience-item items-center border-b border-gray-800 py-4 flex grid grid-cols-1 flex-row md:flex-col md:grid-cols-2">
-          <div class="year text-left font-bold">
-            Mar 2021 - Jun 2025
-          </div>
-          <div class="experience-info">
-            <h2 class="text-2xl mb-2">Senior Full Stack Developer</h2>
-            <p class="text-gray-300">Emapta Versatile Services Inc.</p>
-          </div>
-        </div>
-        <div
-          class="experience-item items-center border-b border-gray-800 py-4 flex grid grid-cols-1 flex-row md:flex-col md:grid-cols-2">
-          <div class="year text-left font-bold">
-            Dec 2020 - Mar 2021
-          </div>
-          <div class="experience-info">
-            <h2 class="text-2xl mb-2">Consultant / WordPress Developer</h2>
-            <p class="text-gray-300">Outrich Philippines Inc.</p>
-          </div>
-        </div>
-        <div
-          class="experience-item items-center border-b border-gray-800 py-4 flex grid grid-cols-1 flex-row md:flex-col md:grid-cols-2">
-          <div class="year text-left font-bold">
-            Jul - Nov 2020
-          </div>
-          <div class="experience-info">
-            <h2 class="text-2xl mb-2">Freelance Web Developer</h2>
-            <p class="text-gray-300">Freelance</p>
-          </div>
-        </div>
-        <div
-          class="experience-item items-center border-b border-gray-800 py-4 flex grid grid-cols-1 flex-row md:flex-col md:grid-cols-2">
-          <div class="year text-left font-bold">
-            2018 - 2020
-          </div>
-          <div class="experience-info">
-            <h2 class="text-2xl mb-2">Production Department Head</h2>
-            <p class="text-gray-300">LEENTech Network Solutions Inc.</p>
-          </div>
-        </div>
-        <div
-          class="experience-item items-center border-b border-gray-800 py-4 flex grid grid-cols-1 flex-row md:flex-col md:grid-cols-2">
-          <div class="year text-left font-bold">
-            2016 - 2018
-          </div>
-          <div class="experience-info">
-            <h2 class="text-2xl mb-2">Senior Web Developer</h2>
-            <p class="text-gray-300">LEENTech Network Solutions Inc.</p>
-          </div>
-        </div>
-        <div class="experience-item items-center py-4 flex grid grid-cols-1 flex-row md:flex-col md:grid-cols-2">
-          <div class="year text-left font-bold">
+      <div class="experiences-list w-full max-w-auto md:max-w-[600px] m-auto text-center">
+        <div class="experience-item border-b border-gray-500 py-10 px-5" data-aos="fade-down" data-aos-delay="500">
+          <div class="year text-violet-900 text-md">
             2014 - 2016
           </div>
           <div class="experience-info">
             <h2 class="text-2xl mb-2">Junior Web Developer</h2>
-            <p class="text-gray-300">LEENTech Network Solutions Inc.</p>
+            <p class="text-gray-900">LEENTech Network Solutions Inc.</p>
+          </div>
+        </div>
+        <div class="experience-item border-b border-gray-500 py-10 px-5" data-aos="fade-down" data-aos-delay="500">
+          <div class="year text-violet-900 text-md">
+            2016 - 2018
+          </div>
+          <div class="experience-info">
+            <h2 class="text-2xl mb-2">Senior Web Developer</h2>
+            <p class="text-gray-900">LEENTech Network Solutions Inc.</p>
+          </div>
+        </div>
+        <div class="experience-item border-b border-gray-500 py-10 px-5" data-aos="fade-down" data-aos-delay="500">
+          <div class="year text-violet-900 text-md">
+            2018 - 2020
+          </div>
+          <div class="experience-info">
+            <h2 class="text-2xl mb-2">Production Department Head</h2>
+            <p class="text-gray-900">LEENTech Network Solutions Inc.</p>
+          </div>
+        </div>
+        <div class="experience-item border-b border-gray-500 py-10 px-5" data-aos="fade-down" data-aos-delay="500">
+          <div class="year text-violet-900 text-md">
+            Jul - Nov 2020
+          </div>
+          <div class="experience-info">
+            <h2 class="text-2xl mb-2">Freelance Web Developer</h2>
+            <p class="text-gray-900">Freelance</p>
+          </div>
+        </div>
+        <div class="experience-item border-b border-gray-500 py-10 px-5" data-aos="fade-down" data-aos-delay="500">
+          <div class="year text-violet-900 text-md">
+            Dec 2020 - Mar 2021
+          </div>
+          <div class="experience-info">
+            <h2 class="text-2xl mb-2">Consultant / WordPress Developer</h2>
+            <p class="text-gray-900">Outrich Philippines Inc.</p>
+          </div>
+        </div>
+        <div class="experience-item py-10" data-aos="fade-down" data-aos-delay="500">
+          <div class="year text-violet-900 text-md">
+            Mar 2021 - Jun 2025
+          </div>
+          <div class="experience-info">
+            <h2 class="text-2xl mb-2">Full Stack Developer</h2>
+            <p class="text-gray-900">Emapta Versatile Services Inc.</p>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Skills -->
+    <section class="skills p-4 my-16">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+
+        <div class="order-0 lg:order-1">
+          <div class="section-header text-center mb-[2rem] w-full" data-aos="fade-down-left">
+            <h1 class="ghost-title text-8xl md:text-[10rem] md:leading-30 text-violet-900 mb-[-3rem] ml-[-5rem]">Skills
+              &
+            </h1>
+            <h1 class="section-title text-6xl md:text-[6rem]">Tech Stack</h1>
+          </div>
+          <img src="images/scroll-flair-3.png" alt="Aubrey Rose Quisumbing" class="rounded-full h-25 w-auto mx-auto" />
+
+        </div>
+        <div class="order-1 lg:order-0" data-aos="fade-zoom-in">
+          <div class="skills-list grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="skill-grid-item py-5 px-6 rounded-lg pb-8">
+              <div class="section-header text-left mb-3">
+                <h1 class="section-title text-2xl">Front-end Development</h1>
+              </div>
+              <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>VueJS</li>
+                <li>AngularJS</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
+            <div class="skill-grid-item py-5 px-6 rounded-lg pb-8">
+              <div class="section-header text-left mb-3">
+                <h1 class="section-title text-2xl">Back-end Development</h1>
+              </div>
+              <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>PHP, Laravel</li>
+                <li>MySQL, MongoDB</li>
+                <li>API Development and Integrations</li>
+              </ul>
+            </div>
+            <div class="skill-grid-item py-5 px-6 rounded-lg pb-8">
+              <div class="section-header text-left mb-3">
+                <h1 class="section-title text-2xl">E-commerce Development</h1>
+              </div>
+              <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>Magento</li>
+                <li>WooCommerce</li>
+                <li>Shopify</li>
+              </ul>
+            </div>
+            <div class="skill-grid-item py-5 px-6 rounded-lg pb-8">
+              <div class=" section-header text-left mb-3">
+                <h1 class="section-title text-2xl">Website Development</h1>
+              </div>
+              <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>HTML, CSS, Vanilla JavaScript</li>
+                <li>SASS, Tailwind CSS, Bootstrap</li>
+                <li>WordPress, Elementor</li>
+              </ul>
+            </div>
+            <div class="skill-grid-item py-5 px-6 rounded-lg pb-8">
+              <div class="section-header text-left mb-3">
+                <h1 class="section-title text-2xl">Tools & Other Knowledge</h1>
+              </div>
+              <ul class="list-disc list-inside mt-2 space-y-2">
+                <li>JIRA, Confluence, Trello</li>
+                <li>Github, Bitbucket</li>
+                <li>SonarQube</li>
+                <li>Agile, Scrum, Kanban Methodologies</li>
+                <li>Product Documentation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
     <section class="contact mb-[6rem]">
-      <div class="section-header text-left mb-[3rem]">
-        <h1 class="ghost-title text-8xl md:text-[10rem] text-violet-900 mb-[-3rem] md:leading-30">Let's Discuss!</h1>
+      <div class="section-header text-left mb-[3rem]" data-aos="fade-up">
+        <h1 class="ghost-title text-6xl md:text-[10rem] text-violet-900 mb-[-1.2rem] md:leading-30">Let's Discuss!</h1>
         <h1 class="section-title text-6xl">Do you have any ideas I can help you with?</h1>
       </div>
-      <div class="contact-list grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div class="flex flex-row items-center gap-2">
-          <div class="flex items-center justify-center rounded-full size-10 bg-gray-800 text-gray-400">
-            <i class="bi bi-geo-alt"></i>
-          </div>
-          <span>Cavite, Philippines</span>
+      <div class="flex flex-wrap items-center" data-aos="fade-zoom-in" data-aos-delay="400">
+        <div class="p-2 order-0 md:order-1 w-full md:w-auto">
+          <img src="images/me-cartoon.png" alt="Aubrey Rose Quisumbing" class="h-[150px] w-auto mx-auto" />
         </div>
-        <div class="flex flex-row items-center gap-2">
-          <div class="flex items-center justify-center rounded-full size-10 bg-gray-800 text-gray-400">
-            <i class="bi bi-envelope"></i>
+        <div class="contact-list grow-1 grid grid-cols-1 md:grid-cols-2 gap-4 order-1 md:order-0">
+          <div class="flex flex-row items-center gap-2">
+            <div class="flex items-center justify-center rounded-full size-10 bg-violet-100 text-gray-600">
+              <i class="bi bi-geo-alt"></i>
+            </div>
+            <span>Cavite, Philippines</span>
           </div>
-          <a href="mailto:arquisumbing16@gmail.com" class="hover:text-violet-400">arquisumbing16@gmail.com</a>
-        </div>
-        <div class="flex flex-row items-center gap-2">
-          <div class="flex items-center justify-center rounded-full size-10 bg-gray-800 text-gray-400">
-            <i class="bi bi-linkedin"></i>
+          <div class="flex flex-row items-center gap-2">
+            <div class="flex items-center justify-center rounded-full size-10 bg-violet-100 text-gray-600">
+              <i class="bi bi-envelope"></i>
+            </div>
+            <a href="mailto:arquisumbing16@gmail.com" class="hover:text-violet-400">arquisumbing16@gmail.com</a>
           </div>
-          <a href="https://www.linkedin.com/in/aubrey-rose-quisumbing-b5b64157/" target="_blank"
-            class="hover:text-violet-400">linkedin.com/in/aubrey-rose-quisumbing-b5b64157</a>
-        </div>
-        <div class="flex flex-row items-center gap-2">
-          <div class="flex items-center justify-center rounded-full size-10 bg-gray-800 text-gray-400">
-            <i class="bi bi-github"></i>
+          <div class="flex flex-row items-center gap-2">
+            <div class="flex items-center justify-center rounded-full size-10 bg-violet-100 text-gray-600">
+              <i class="bi bi-linkedin"></i>
+            </div>
+            <a href="https://www.linkedin.com/in/aubrey-rose-quisumbing-b5b64157/" target="_blank"
+              class="hover:text-violet-400">linkedin.com/in/aubrey-rose-quisumbing-b5b64157</a>
           </div>
-          <a href="https://www.github.com/aubreyrq16" target="_blank"
-            class="hover:text-violet-400">github.com/aubreyrq16</a>
+          <div class="flex flex-row items-center gap-2">
+            <div class="flex items-center justify-center rounded-full size-10 bg-violet-100 text-gray-600">
+              <i class="bi bi-github"></i>
+            </div>
+            <a href="https://www.github.com/aubreyrq16" target="_blank"
+              class="hover:text-violet-400">github.com/aubreyrq16</a>
+          </div>
         </div>
       </div>
+
     </section>
   </main>
-  <footer class="bg-neutral-200 text-gray-900 text-center text-xs p-2">
+
+  <footer class="text-gray-900 text-center text-xs p-2">
     &copy; 2025 Aubrey Q.
   </footer>
 </body>
