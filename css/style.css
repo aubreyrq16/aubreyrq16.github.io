@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 * {
   -moz-transition: all 0.5s ease-in-out 0s;
@@ -11,16 +11,21 @@
 body {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 .radial-bg {
-  background: linear-gradient(357.14deg, #fff 30.18%, rgba(255, 255, 255, 0) 62.27%), radial-gradient(50% 50% at 50% 50%, #fff 0, rgba(255, 255, 255, 0) 100%), linear-gradient(75deg, #bad2ea 19.7%, rgba(224, 230, 238, 0) 66.51%), linear-gradient(25.32deg, #ff9abc 23.7%, rgba(210, 123, 61, 0) 85.02%), linear-gradient(140.23deg, #f37a23 -3.96%, rgba(210, 123, 61, 0) 59.99%), linear-gradient(194.04deg, #efca6f -17.13%, rgba(242, 204, 118, 0) 29.34%), linear-gradient(236.09deg, #d78ca5 4.2%, rgba(215, 140, 165, 0) 45.07%), #fff9f9;
+  /* background: linear-gradient(357.14deg, #fff 30.18%, rgba(255, 255, 255, 0) 62.27%), radial-gradient(50% 50% at 50% 50%, #fff 0, rgba(255, 255, 255, 0) 100%), linear-gradient(75deg, #bad2ea 19.7%, rgba(224, 230, 238, 0) 66.51%), linear-gradient(25.32deg, #ff9abc 23.7%, rgba(210, 123, 61, 0) 85.02%), linear-gradient(140.23deg, #f37a23 -3.96%, rgba(210, 123, 61, 0) 59.99%), linear-gradient(194.04deg, #efca6f -17.13%, rgba(242, 204, 118, 0) 29.34%), linear-gradient(236.09deg, #d78ca5 4.2%, rgba(215, 140, 165, 0) 45.07%), #fff9f9; */
+  background-image: url('../images/texturedbg.png');
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 100vh;
   width: 100vw;
   position: fixed;
   z-index: -1;
+  opacity: 0.5;
 }
 
 h1,
@@ -29,7 +34,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Playfair Display", serif;
+  font-family: "PT Serif", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
 }
