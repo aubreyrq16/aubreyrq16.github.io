@@ -7,6 +7,36 @@ const lenis = new Lenis({
   autoRaf: true,
 });
 
+const sectionsWithIds = [...document.querySelectorAll("main > section[id]")];
+let hashSyncRaf = null;
+
+function syncUrlHashToActiveSection() {
+  if (!sectionsWithIds.length) return;
+  const marker = Math.max(80, window.innerHeight * 0.12);
+  let activeId = sectionsWithIds[0].id;
+  for (const section of sectionsWithIds) {
+    if (section.getBoundingClientRect().top <= marker) {
+      activeId = section.id;
+    }
+  }
+  const next = "#" + activeId;
+  if (location.hash !== next) {
+    history.replaceState(null, "", next);
+  }
+}
+
+function scheduleUrlHashSync() {
+  if (hashSyncRaf != null) return;
+  hashSyncRaf = requestAnimationFrame(() => {
+    hashSyncRaf = null;
+    syncUrlHashToActiveSection();
+  });
+}
+
+lenis.on("scroll", scheduleUrlHashSync);
+window.addEventListener("load", scheduleUrlHashSync);
+requestAnimationFrame(scheduleUrlHashSync);
+
 // Initialize AOS
 AOS.init();
 
